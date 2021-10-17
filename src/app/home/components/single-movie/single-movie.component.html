@@ -1,0 +1,34 @@
+<ion-card>
+  <ion-img [src]="movie.image"></ion-img>
+  <ion-card-header>
+    <ion-card-title>{{ movie.fullTitle }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content class="ion-no-padding">
+    <ion-card color="medium">
+      <ion-card-header class="ion-padding-horizontal">
+        <ion-title>Deatils:</ion-title>
+      </ion-card-header>
+      <ion-list>
+        <ion-item>
+          <ion-label>IMDB:</ion-label>
+          <ion-label slot="end">{{ movie.imDbRating }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>TheMovieDB:</ion-label>
+          <ion-label slot="end">{{ imdbResultsData.theMovieDb }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Metacritic:</ion-label>
+          <ion-label slot="end">{{ imdbResultsData.metacritic }}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="long ion-padding-vertical"
+            >Crew: {{ movie.crew }}</ion-label
+          >
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </ion-card-content>
+</ion-card>

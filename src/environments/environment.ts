@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  imdbApiUrl: 'https://imdb-api.com/en/API/Top250Movies/',
+  imdbApiKey: 'k_ffm83czx',
+  imdbRatingsUrl: 'https://imdb-api.com/en/API/Ratings/',
 };
 
 /*
